@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="css/musicplayer.css">
+</head>
+<body>
+	<div id="whole">
+		<header>
+			<img src="img/title.png"><!-- <span id="welcome">欢迎&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="user"></span></span><span id="close">×</span> --></header>
+			<span id="close_menu"></span>
+		<div id="container">
+			<img id="bgimg" src="img/girl.jpg">
+
+			<audio src="music/王菲 - 暧昧.mp3" id="audio"></audio>
+
+			<div id="menu">
+				<ul>
+					<li id="li1"><span class="musicName">暧昧</span><span class="author">--王菲</span></li>
+					<li id="li2"><span class="musicName">矜持</span><span class="author">--王菲</span></li>
+					<li id="li3"><span class="musicName">葡萄成熟时</span><span class="author">--陈奕迅</span></li>
+					<li id="li4"><span class="musicName">悟空</span><span class="author">--戴荃</span></li>
+					<li id="li5"><span class="musicName">新娘阿花</span><span class="author">--金玟岐</span></li>
+				</ul>
+			</div>
+			<div id="player" style="display:none;">
+				<div id="playerheader"><span id="icon"></span><span id="playerName"></span> --<span id="playerauthor"></span></div>
+				<div class="lyric" id="lyric">
+					<div class="content_lrc_box" id="content_lrc_box"></div>
+					
+				</div>
+			</div>
+		<footer>
+			<ul id="ul1">
+				<li><span id="play"></span></li>
+				<li><span id="last"></span></li>
+				<li><span id="next"></span></li>
+				<li id="currenttime">00:00</li>&nbsp;
+				<li><span id="range"></span><span id="currentrange"></span></li>
+				<li id="alltime">00:00</li>
+				<li><img id="playsort" src="img/round_play.png" name="0"></img></li>
+				<li><span id="sound"></span></li>
+				<li><span id="soundrange"></span>
+				<span id="soundCrange"></span></li>
+			</ul>
+		</footer>
+	</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/musicplayer.js"></script>
+</body>
+</html>
